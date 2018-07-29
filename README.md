@@ -1,2 +1,24 @@
-# pakistan_election_results_2018
-Election results data reported for Pakistan 2018 general elections
+# Provisional Election Results Data for Pakistan's 2018 General Elections
+
+This repository hosts results data as reported by the Election Commission of Pakistan (ECP) for general elections for the national and provincial assemblies, held on July 25 2018. The output, collecting all candidate result reports, is released in a tidy .csv format in the file **[pk_candidate_data_2018.csv](https://github.com/colincookman/pakistan_election_results_2018/blob/master/pk_candidate_data_2018.csv)**. This data has also been re-aggregated into a constituency-level summary in the file ****[pk_candidate_data_2018.csv](https://github.com/colincookman/pakistan_election_results_2018/blob/master/pk_constituency_data_2018.csv)**.
+
+This data is **provisional** and current only as of approximately 12:00 PM GMT July 28 2018. The results initially collected here will be further altered by recounts (some underway or recently-completed as of the initial data collection and not yet reflected in figures here), legal complaints, and other disputes and adjudication prior to the finalization of results and publication in the official Gazette of Pakistan. Further ECP data entry errors are also likely to be identified; vote_total_discrepancies.csv identifies cases where the ECP's reported total valid votes cast does not match the sum of available candidate data. "Test data" appears to have been entered into the system as announced results rather than corrected to reflect actual election-day results, and as of initial observation the ECP had not corrected this in a currently undetermined number of cases.
+
+These datasets will be revised and updated as corrected information is available. They remain a work in progress and caution is advised when using it for analysis. The author cannot verify the accuracy of, or account for any discrepancies in, the underlying data. For questions, suggestions, or to contribute, please leave an issue here or contact Colin Cookman by email or Twitter.
+
+# Data sources
+The ECP released results data [through its website](https://www.ecp.gov.pk/ResultDetails.aspx?EleId=10070&Election=General%20Election%2025%20Jul%202018) and a [results dashboard](https://www.ecp.gov.pk/resultdashboard/ge2018.aspx) beginning on the evening of the election; constituency-level results were downloaded and consolidated to create this dataset. 
+
+The ECP also released scanned copies of Form 47 (Provisional Results) forms in Google Drive folders for the [national](https://drive.google.com/drive/folders/1EM_bzpMPX04uCPi8A4hh7e_nVVD2HA69?usp=sharing) and [provincial](https://drive.google.com/drive/folders/1nMEPfRD6nDVCg4sWdDN_qyD0An0zL179?usp=sharing) assemblies, which may serve as a cross-check on some results.
+
+# Caveats and gaps in the data
+An apparent breakdown in the ECP results management system (RMS) delayed the reporting and consolidation of results, and the full provisional results for all constituencies where elections were held were not reported until July 28 2018. Some candidates and political parties [made complaints](https://tribune.com.pk/story/1766621/1-key-national-parties-insist-massive-rigging/) that their agent observers were denied access to the final count at polling stations, and have challenged the accuracy of the final figures, but the ECP [denied](https://tribune.com.pk/story/1766411/1-ecp-rejects-political-parties-claim-rigging-election-day/) those charges. 
+
+As of this initial release, the ECP has not published the detailed polling station level data captured through the RMS.
+
+Elections were postponed in the following constituencies either due to the death or recent disqualification of a contesting candidate: NA-60, NA-103, PK-78, PK-99, PP-87, PP-103, PS-87, and PB-35. PS-6 was uncontested.
+
+# Additional data references
+For a dataset of historical election data by candidate and constituency for national elections since 1993, see [this dataset](https://github.com/colincookman/pakistan_elections/tree/master/data), or alternatively resources from the [Free and Fair Elections Network's Elections Pakistan website](https://electionpakistan.com/) or the ECP website. Note that constituency boundaries were changed in early 2018 following the 2017 census, changing the electoral composition of many constituencies.
+
+For additional available data released by the ECP for the 2018 elections, see repositories on [Candidate Nominations and Scrutiny Forms](https://github.com/colincookman/pakistan_candidate_scrutiny_18), [Candidate Registry with Party Affiliation for the National Assembly](https://github.com/colincookman/pakistan_candidate_registry_18) and [Polling Station GIS data](https://github.com/colincookman/pakistan_polling_stations_2018). Further expansion and analysis of the elections will continue as more information becomes available.
