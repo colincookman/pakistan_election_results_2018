@@ -12,3 +12,9 @@ data/pakistan_election_data_073018.csv
 data/pakistan_election_data_073118.csv
 data/pk_candidate_data_consolidated_073118.csv
 data/pk_constituency_data_consolidated_073118.csv
+analysis/election_results_changes.R
+data/constituency_district_key.csv
+data/pk_candidate_data_consolidated_080118.csv
+data/pk_constituency_data_consolidated_080118.csv
+graphics/party_incumbency_plot.png
+data/pakistan_election_data_080118.csv
